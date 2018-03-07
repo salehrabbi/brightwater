@@ -81,6 +81,22 @@ body {
   font-size: 78px;
   line-height: 1.1923076923;
   max-width: 672px;
+  position: relative;
+}
+.slider .item h1 span {
+  position: relative;
+  z-index: 2;
+}
+.slider .item h1:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 152px;
+  height: 188px;
+  border: 11px solid #09424F;
+  top: -88px;
+  left: -79px;
 }
 .slider .item p {
   margin: 0;
@@ -117,6 +133,9 @@ body {
   width: 100%;
   margin: 0;
   text-align: left;
+}
+.slider .container {
+  padding-left: 352px;
 }
 
 /*======================= welcome ========================*/
@@ -358,4 +377,82 @@ body {
 .section-heading p a {
   color: #B78B61;
   text-decoration: underline;
+}
+
+/*======================= footer-banner ========================*/
+.footer-banner {
+  background: url(../images/018_Open2view_ID346313-264_Brightwater_Road%202.png) no-repeat;
+  background-size: cover;
+}
+.footer-banner .overlay {
+  background: rgba(9, 66, 79, 0.75);
+  color: #fff;
+  padding: 77px 0;
+}
+.footer-banner .overlay h2 {
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.footer-banner .overlay .button {
+  border: 2px solid #fff;
+  display: inline-block;
+  padding: 6px;
+}
+.footer-banner .overlay .button a.btn {
+  border: 2px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  border-radius: 0;
+  padding: 14px 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+.footer-banner .overlay .button a.btn:hover {
+  background: #09424F;
+}
+
+/*======================= main-footer ========================*/
+.main-footer {
+  background: #09424F;
+  padding-bottom: 22px;
+}
+.main-footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+}
+.main-footer ul > li {
+  padding: 7px;
+  display: inline-block;
+}
+.main-footer ul > li > a {
+  font-size: 15px;
+  line-height: 1.3333333333;
+  text-transform: capitalize;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: block;
+}
+.main-footer ul > li > a:hover {
+  color: #fff;
+  opacity: .8;
+}
+.main-footer .footer-menu {
+  padding-top: 25px;
+}
+.main-footer ul.footer-menu2 {
+  color: #fff;
+  font-size: 12px;
+}
+.main-footer ul.footer-menu2 li {
+  padding: 0;
+}
+.main-footer ul.footer-menu2 li a {
+  font-size: 12px;
+  padding: 0 10px;
 }
