@@ -222,3 +222,140 @@ body {
   letter-spacing: .2em;
   font-size: 10px;
 }
+
+.no-padding {
+  padding: 0;
+}
+
+/*======================= attractions ========================*/
+.attractions {
+  background: #09424F;
+  color: #EBEBEB;
+}
+.attractions .custom {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  padding-bottom: 0;
+}
+.attractions .borders {
+  position: absolute;
+  height: 100%;
+  width: 98%;
+  top: 0;
+  z-index: 2;
+  left: 12px;
+}
+.attractions .borders .border {
+  height: 100%;
+  width: 25%;
+  border-left: 2px solid #053D4A;
+  float: left;
+}
+.attractions .borders .border:last-child {
+  border-right: 2px solid transparent;
+}
+.attractions .content-wraper {
+  margin: 0 -2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  position: relative;
+}
+.attractions .content-wraper .col-md-3 {
+  border-left: 2px solid #053D4A;
+}
+.attractions .content-wraper .col-md-3:first-child {
+  border-left-color: transparent;
+}
+.attractions .content-wraper .col-md-3:nth-child(odd) .content {
+  background: #E5E5E5;
+}
+.attractions .content {
+  position: relative;
+  background: #C1E3EC;
+  z-index: 4;
+  height: 100%;
+}
+.attractions .content:after {
+  content: "";
+  position: absolute;
+  left: 14%;
+  height: 100%;
+  width: 2px;
+  background: #FFFFFF;
+  top: 0;
+}
+.attractions .content img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+.attractions .content .text-wraper .rotate {
+  font-size: 13px;
+  color: #2B2B2B;
+  padding: 12px;
+  padding-left: 37px;
+  position: absolute;
+  top: 70%;
+  left: -43%;
+  width: 100%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+.attractions .content .text-wraper .text {
+  margin-left: 36px;
+  padding: 40px 11px 30px 27px;
+}
+.attractions .content .text-wraper .text a.title {
+  font-size: 23px;
+  color: #2B2B2B;
+  display: inline-block;
+  margin-bottom: 19px;
+}
+.attractions .content .text-wraper .text small {
+  display: block;
+  font-size: 13px;
+  color: #2B2B2B;
+  margin-bottom: 15px;
+}
+.attractions .content .text-wraper .text p {
+  font-size: 13px;
+  color: #2B2B2B;
+}
+
+.section-heading {
+  padding-left: 20px;
+  position: relative;
+  z-index: 3;
+}
+.section-heading h2 {
+  font-size: 52px;
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  margin-bottom: 18px;
+}
+.section-heading p {
+  max-width: 688px;
+  font-size: 17px;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 20px;
+}
+.section-heading p:before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 100%;
+  width: 28px;
+  top: 0;
+  left: -65px;
+}
+.section-heading p a {
+  color: #B78B61;
+  text-decoration: underline;
+}
