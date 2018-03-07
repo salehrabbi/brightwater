@@ -118,3 +118,107 @@ body {
   margin: 0;
   text-align: left;
 }
+
+/*======================= welcome ========================*/
+.space {
+  padding: 90px 0;
+}
+
+.heading {
+  padding-bottom: 85px;
+}
+.heading h2 {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.3076923077;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #424242;
+  margin-bottom: 10px;
+}
+.heading p {
+  max-width: 782px;
+  font-size: 24px;
+  line-height: 1.3333333333;
+  margin: 0 auto;
+}
+
+.welcome .img-right {
+  padding-left: 40px;
+}
+.welcome .img-right .profile {
+  margin-top: -27%;
+  margin-left: -40px;
+}
+.welcome .img-right .profile > img {
+  border: 6px solid #fff;
+}
+.welcome .content-right h3 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.3333333333;
+  font-family: "Playfair Display", serif;
+  color: #424242;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 33px;
+  margin-top: 10px;
+}
+.welcome .content-right h3 span {
+  display: block;
+  padding-bottom: 17px;
+}
+.welcome .content-right h3 .border {
+  width: 152px;
+  height: 1px;
+  background: #DEDEDE;
+  display: block;
+}
+.welcome .content-right h3:after {
+  content: "";
+  width: 44px;
+  height: 2px;
+  background: #32A2C7;
+  display: block;
+  position: relative;
+  top: -2px;
+  left: 20px;
+}
+.welcome .content-right p {
+  font-size: 15px;
+  line-height: 1.5333333333;
+  color: #292929;
+  font-weight: 300;
+}
+.welcome .content-right .btn {
+  border: 2px solid #0C4452;
+  border-radius: 0;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #09424F;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.welcome .content-right .btn:hover {
+  background: #09424F;
+  color: #fff;
+}
+.welcome .content-right small {
+  max-width: 344px;
+  font-size: 13px;
+  color: #292929;
+  line-height: 2;
+  font-weight: 300;
+  display: block;
+}
+
+#zoom {
+  color: #424242;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 10px;
+}

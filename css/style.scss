@@ -127,3 +127,111 @@ body {
     }
 
 }
+
+/*======================= welcome ========================*/
+
+.space {
+    padding: 90px 0;
+}
+
+.heading {
+    padding-bottom: (55px+30);
+    h2 {
+        margin: 0;
+        font-size: 13px;
+        line-height: (17/13);
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #424242;
+        margin-bottom: 10px;
+    }
+    p {
+        max-width: 782px;
+        font-size: 24px;
+        line-height: (32/24);
+        margin: 0 auto;
+    }
+}
+
+.welcome {
+    .img-right {
+        padding-left: 40px;
+        .profile {
+            margin-top: -27%;
+            margin-left: -40px;
+            > img {
+                border: 6px solid #fff;
+            }
+        }
+    }
+    .content-right {
+        h3 {
+            margin: 0;
+            font-size: 36px;
+            line-height: (48/36);
+            font-family: $p;
+            color: #424242;
+            display: inline-block;
+            position: relative;
+            margin-bottom: 33px;
+            margin-top: 10px;
+            span {
+                display: block;
+                padding-bottom: 17px;
+            }
+            .border {
+                width: 152px;
+                height: 1px;
+                background: #DEDEDE;
+                display: block;
+            }
+            &:after {
+                content: "";
+                width: 44px;
+                height: 2px;
+                background: #32A2C7;
+                display: block;
+                position: relative;
+                top: -2px;
+                left: 20px;
+            }
+        }
+        p {
+            font-size: 15px;
+            line-height: (23/15);
+            color: #292929;
+            font-weight: 300;
+        }
+        .btn {
+            border: 2px solid #0C4452;
+            border-radius: 0;
+            text-transform: uppercase;
+            padding: 14px 20px;
+            font-size: 16px;
+            letter-spacing: 2px;
+            color: #09424F;
+            transition: .3s;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            &:hover{
+                background: $bg;
+                color: #fff;
+            }
+        }
+        small{
+            max-width: 344px;
+            font-size: 13px;
+            color: #292929;
+            line-height: 2;
+            font-weight: 300;
+            display: block;
+        }
+    }
+}
+
+#zoom {
+    color: #424242;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 10px;
+}
