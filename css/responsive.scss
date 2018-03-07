@@ -83,6 +83,13 @@ $bg: #09424F;
     .main-footer ul {
         text-align: center;
     }
+    .facilities {
+        padding-bottom: 100px;
+    }
+    .facilities #myCarousel2 {
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
 }
 
 @media (max-width:767px) {
@@ -189,5 +196,11 @@ $bg: #09424F;
     }
     .footer-banner .overlay h2 {
         font-size: 24px;
+    }
+    .facilities .contraol {
+        height: 40px;
+        width: 40px;
+        font-size: 24px;
+        top: -60px;
     }
 }

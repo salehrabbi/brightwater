@@ -1,3 +1,3 @@
 $(function () {
-    $('#zoom').viewbox();
+    $('.zoom').viewbox();
 });
