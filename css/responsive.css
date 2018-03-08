@@ -178,6 +178,10 @@
   .main-footer .footer-menu {
     padding-bottom: 20px;
   }
+
+  .page-banner .overlay .container {
+    min-height: 480px;
+  }
 }
 @media (max-width: 479px) {
   .navbar-brand > img {
@@ -245,5 +249,11 @@
     width: 40px;
     font-size: 24px;
     top: -60px;
+  }
+
+  .page-banner .banner-heading {
+    width: 100%;
+    text-align: center;
+    padding: 0;
   }
 }

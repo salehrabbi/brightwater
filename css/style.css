@@ -557,3 +557,75 @@ body {
   font-size: 12px;
   padding: 0 10px;
 }
+
+/*======================= Pages ========================*/
+.page-banner {
+  background-image: url(../images/027_Open2view_ID346313-264_Brightwater_Road.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Playfair Display", serif;
+}
+.page-banner .overlay {
+  background: linear-gradient(148.19deg, rgba(0, 0, 0, 0.2835) 46.76%, rgba(56, 56, 56, 0) 78.35%);
+}
+.page-banner .overlay .container {
+  min-height: 674px;
+}
+.page-banner .banner-heading {
+  color: #fff;
+  font-size: 52px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  display: inline-block;
+  padding: 0 69px;
+}
+.page-banner .banner-heading h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: 45px;
+  top: -57px;
+}
+.page-banner .banner-heading:after {
+  position: absolute;
+  content: "";
+  background: #09424F;
+  height: 74px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.page .welcome .heading {
+  padding-bottom: 0;
+}
+
+/*======================= attractions Page ========================*/
+.attractions-page .attractions .container {
+  padding: 0 15px;
+  padding-bottom: 70px;
+}
+.attractions-page .attractions .content-wraper {
+  padding-bottom: 40px;
+}
+
+.attraction-heading {
+  position: relative;
+  z-index: 5;
+  margin: 51px 0 36px 0;
+}
+.attraction-heading h2 {
+  margin: 0;
+  padding-left: 23px;
+}
+.attraction-heading:before {
+  content: "";
+  width: 28px;
+  height: 30px;
+  position: absolute;
+  left: -30px;
+  top: 0;
+  background: #fff;
+}

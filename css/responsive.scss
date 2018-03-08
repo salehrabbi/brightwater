@@ -146,6 +146,9 @@ $bg: #09424F;
     .main-footer .footer-menu {
         padding-bottom: 20px;
     }
+    .page-banner .overlay .container {
+        min-height: 480px;
+    }
 }
 
 
@@ -202,5 +205,10 @@ $bg: #09424F;
         width: 40px;
         font-size: 24px;
         top: -60px;
+    }
+    .page-banner .banner-heading {
+        width: 100%;
+        text-align: center;
+        padding: 0;
     }
 }
