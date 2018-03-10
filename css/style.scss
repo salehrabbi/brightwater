@@ -589,12 +589,12 @@ body {
     font-family: $p;
     .overlay {
         background: linear-gradient(148.19deg, rgba(0, 0, 0, 0.2835) 46.76%, rgba(56, 56, 56, 0) 78.35%);
-        .container{
+        .container {
             min-height: 674px;
         }
 
     }
-    .banner-heading{
+    .banner-heading {
         color: #fff;
         font-size: 52px;
         position: absolute;
@@ -603,14 +603,14 @@ body {
         z-index: 2;
         display: inline-block;
         padding: 0 69px;
-        h2{
+        h2 {
             position: relative;
             z-index: 2;
             margin: 0;
             font-size: 45px;
             top: -57px;
         }
-        &:after{
+        &:after {
             position: absolute;
             content: "";
             background: $bg;
@@ -629,28 +629,32 @@ body {
         }
     }
 }
+
 /*======================= attractions Page ========================*/
-.attractions-page{
-    .attractions{
-        
+
+.attractions-page {
+    .attractions {
+
         .container {
             padding: 0 15px;
             padding-bottom: 70px;
         }
-        .content-wraper{
+        .content-wraper {
             padding-bottom: 40px;
         }
     }
 }
-.attraction-heading{
+
+.attraction-heading {
     position: relative;
     z-index: 5;
     margin: 51px 0 36px 0;
-    h2{
+    font-family: $p;
+    h2 {
         margin: 0;
         padding-left: 23px;
     }
-    &:before{
+    &:before {
         content: "";
         width: 28px;
         height: 30px;
@@ -658,5 +662,35 @@ body {
         left: -30px;
         top: 0;
         background: #fff;
+    }
+}
+
+.img-full {
+    width: 100%;
+}
+
+.about-artical {
+    color: #454545;
+    .wraper {
+        max-width: 846px;
+        margin: 0 auto;
+    }
+    img{
+        margin-bottom: 40px;
+    }
+    .radious {
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            margin: 0;
+        }
+    }
+    h3{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    p{
+        margin-bottom: 40px;
     }
 }
