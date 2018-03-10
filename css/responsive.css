@@ -113,6 +113,10 @@
     margin: 0 auto;
     padding-bottom: 50px;
   }
+
+  .contact-map .contact-button a {
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
   .attractions .content-wraper {
@@ -145,6 +149,12 @@
   .radious {
     text-align: center;
     margin-bottom: 30px;
+  }
+
+  .contact-map .map {
+    position: static;
+    min-height: 450px;
+    width: 100%;
   }
 }
 @media (max-width: 575px) {
