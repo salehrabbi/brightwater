@@ -14,6 +14,11 @@ body {
     }
 }
 
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+
 /*======================= header ========================*/
 
 .main-header {
@@ -52,14 +57,18 @@ body {
     li.book-now {
         border: 2px solid #fff;
         padding: 7px;
+        position: relative;
+        top: -6px;
         a {
             background: #fff;
             color: #09424F;
             text-transform: uppercase;
             transition: .3s;
+            border: 2px solid transparent;
             &:hover {
                 color: #fff;
                 background: $bg;
+                border-color: #fff;
             }
 
         }
@@ -440,32 +449,34 @@ body {
             }
         }
     }
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        li {
-            position: relative;
-            line-height: (27/15);
-            font-size: 15px;
-            color: #292929;
-            &:before {
-                content: "";
-                display: block;
-                float: left;
-                width: 21px;
-                height: 2px;
-                background: #32A2C7;
-                position: relative;
-                top: 13px;
 
-            }
-            span {
-                float: left;
-                width: calc(100% - 21px);
-                padding-left: 18px;
-                display: block;
-            }
+}
+
+.facilitie-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+        position: relative;
+        line-height: (27/15);
+        font-size: 15px;
+        color: #292929;
+        &:before {
+            content: "";
+            display: block;
+            float: left;
+            width: 21px;
+            height: 2px;
+            background: #32A2C7;
+            position: relative;
+            top: 13px;
+
+        }
+        span {
+            float: left;
+            width: calc(100% - 21px);
+            padding-left: 18px;
+            display: block;
         }
     }
 }
@@ -781,6 +792,200 @@ body {
                 background: $bg;
                 color: #fff;
                 outline-color: #fff;
+            }
+        }
+    }
+}
+
+
+
+.rates-page {
+    .main-header {
+        position: static;
+    }
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a {
+        color: #09424F;
+    }
+
+}
+
+@media (min-width:992px) {
+    .rates-page {
+        .main-header li.book-now a {
+            border-color: #09424F;
+            &:hover {
+                color: #fff;
+            }
+        }
+        .main-header li.book-now {
+            border-color: #09424F;
+        }
+    }
+}
+
+.rates {
+    padding-top: 30px;
+    .table > thead > tr > th {
+        border: none;
+        font-weight: 400;
+        color: #454545;
+    }
+    .table > tbody > tr > td,
+    .table > tbody > tr > th,
+    .table > tfoot > tr > td,
+    .table > tfoot > tr > th,
+    .table > thead > tr > td,
+    .table > thead > tr > th {
+        padding: 8px 0;
+        border-color: #454545;
+        font-size: 17px;
+    }
+    .table > tbody > tr {
+        &:last-child {
+            border-bottom: 1px solid #454545;
+        }
+    }
+}
+
+.rates-heading {
+    color: #454545;
+    margin-bottom: 40px;
+    h2 {
+        margin: 0;
+        font-size: 32px;
+        font-family: $p;
+        margin-bottom: 20px;
+        span {
+            display: block;
+            margin-bottom: 10px;
+        }
+        &:after {
+            content: "";
+            width: 39px;
+            height: 1px;
+            background: #454545;
+            display: block;
+
+        }
+    }
+    p {
+        font-size: 17px;
+        max-width: 925px;
+    }
+}
+
+.cancel {
+    padding-top: 60px;
+    padding-bottom: 212px;
+    .content {
+        background: #FFF5D6;
+        border: 1px solid #DECFA2;
+        color: #454545;
+        padding: 30px;
+        margin-left: 30px;
+        position: relative;
+        .important {
+            font-size: 15px;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #A18122;
+            white-space: nowrap;
+            position: absolute;
+            top: 44px;
+            left: -88px;
+            transform: rotate(-90deg);
+        }
+        .cancel-heading {
+            h2 {
+                margin: 0;
+                font-size: 29px;
+                font-family: $p;
+                line-height: (39/29);
+                margin-bottom: 4px;
+            }
+            p {
+                font-weight: 300;
+                font-size: 17px;
+                margin-bottom: 27px;
+            }
+        }
+        ul li::before {
+            background: #BA982D;
+        }
+    }
+
+}
+
+.rates-service {
+    background: $bg;
+    padding-top: 0;
+    .section-heading2 h2 {
+        font-size: 32px;
+        border: none;
+        color: #fff;
+        font-family: $p;
+        span {
+            padding: 0;
+        }
+        &:after {
+            display: none;
+        }
+    }
+    .section-heading2 p {
+        margin: 20px 0;
+        font-size: 14px;
+        max-width: 100%;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    .facilitie-list {
+        padding-top: 50px;
+        ul li span {
+            color: #fff;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+    }
+    .service {
+        background: url(../images/room-1.png) no-repeat;
+        background-size: cover;
+        height: 100%;
+        border-radius: 5px;
+        position: relative;
+        top: -40px;
+        overflow: hidden;
+        .overlay {
+            background: linear-gradient(163.31deg, rgba(0, 0, 0, 0.276) 46.87%, rgba(56, 56, 56, 0) 91.01%);
+            height: 100%;
+            min-height: 272px;
+            padding: 24px;
+            position: relative;
+
+            h3 {
+                margin: 0;
+                font-size: 31px;
+                color: #fff;
+                font-family: $p;
+            }
+            a.link {
+                height: 21px;
+                width: 21px;
+                display: block;
+                background: #fff;
+                border-radius: 50%;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                position: absolute;
+                right: 22px;
+                bottom: 22px;
+                text-align: center;
+                font-size: 12px;
+                color: #09424F;
+                line-height: 21px;
+                letter-spacing: initial;
             }
         }
     }

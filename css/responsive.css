@@ -8,8 +8,12 @@
   }
 
   .main-header .navbar-nav > li > a {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .rates-service .service .overlay h3 {
+    font-size: 29px;
   }
 }
 @media (max-width: 991px) {
@@ -117,6 +121,37 @@
   .contact-map .contact-button a {
     font-size: 14px;
   }
+
+  .rates-service .service-wraper .col-sm-6 {
+    margin-bottom: 30px;
+  }
+
+  .rates-service .facilitie-list {
+    padding-top: 0;
+  }
+
+  .rates .table > tbody > tr > td,
+  .rates .table > tbody > tr > th,
+  .rates .table > tfoot > tr > td,
+  .rates .table > tfoot > tr > th,
+  .rates .table > thead > tr > td,
+  .rates .table > thead > tr > th {
+    padding: 8px;
+  }
+
+  .rates-page .navbar-default .navbar-nav > li > a:focus,
+  .rates-page .navbar-default .navbar-nav > li > a:hover,
+  .rates-page .navbar-default .navbar-nav > li > a {
+    color: #fff;
+  }
+
+  .rates-page .navbar-default .navbar-toggle,
+  .rates-page .navbar-default .navbar-toggle {
+    background-color: #09424F;
+  }
+  .rates-page .main-header li.book-now a {
+    color: #09424F;
+  }
 }
 @media (max-width: 767px) {
   .attractions .content-wraper {
@@ -155,6 +190,10 @@
     position: static;
     min-height: 450px;
     width: 100%;
+  }
+
+  .main-header li.book-now {
+    position: static;
   }
 }
 @media (max-width: 575px) {
@@ -196,6 +235,11 @@
 
   .page-banner .overlay .container {
     min-height: 480px;
+  }
+
+  .rates-service .service {
+    max-width: 262px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 479px) {
@@ -270,5 +314,14 @@
     width: 100%;
     text-align: center;
     padding: 0;
+  }
+
+  .cancel .content .important {
+    display: none;
+  }
+
+  .cancel .content {
+    margin: 0;
+    padding: 15px;
   }
 }
