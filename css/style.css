@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Roboto Slab", serif;
 }
@@ -152,7 +153,7 @@ body {
   padding-left: 352px;
 }
 
-/*======================= welcome ========================*/
+/*======================= welcome section ========================*/
 .space {
   padding: 90px 0;
 }
@@ -260,7 +261,7 @@ body {
   padding: 0;
 }
 
-/*======================= attractions ========================*/
+/*======================= attractions section ========================*/
 .attractions {
   background: #09424F;
   color: #EBEBEB;
@@ -393,7 +394,7 @@ body {
   text-decoration: underline;
 }
 
-/*======================= facilities ========================*/
+/*======================= facilities section ========================*/
 .facilities {
   padding-top: 110px;
 }
@@ -573,7 +574,7 @@ body {
   padding: 0 10px;
 }
 
-/*======================= Pages ========================*/
+/*======================= all Pages common code ========================*/
 .page-banner {
   background-image: url(../images/027_Open2view_ID346313-264_Brightwater_Road.png);
   background-repeat: no-repeat;
@@ -650,6 +651,7 @@ body {
   width: 100%;
 }
 
+/*======================= about section ========================*/
 .about-artical {
   color: #454545;
 }
@@ -674,6 +676,7 @@ body {
   margin-bottom: 40px;
 }
 
+/*======================= contact ========================*/
 .contact-details {
   padding: 67px 0 35px 0;
   color: #454545;
@@ -696,6 +699,7 @@ body {
   color: #454545;
 }
 
+/*======================= contact map ========================*/
 .contact-map {
   background: #09424F;
   color: #fff;
@@ -765,6 +769,7 @@ body {
   outline-color: #fff;
 }
 
+/*======================= rates page ========================*/
 .rates-page .main-header {
   position: static;
 }
@@ -785,6 +790,7 @@ body {
     border-color: #09424F;
   }
 }
+/*======================= rates table ========================*/
 .rates {
   padding-top: 30px;
 }
@@ -833,6 +839,7 @@ body {
   max-width: 925px;
 }
 
+/*======================= cancel policy section ========================*/
 .cancel {
   padding-top: 60px;
   padding-bottom: 212px;
@@ -874,6 +881,7 @@ body {
   background: #BA982D;
 }
 
+/*======================= rates service section ========================*/
 .rates-service {
   background: #09424F;
   padding-top: 0;
@@ -944,4 +952,55 @@ body {
   color: #09424F;
   line-height: 21px;
   letter-spacing: initial;
+}
+
+/*======================= review page ========================*/
+.review-page .page-banner .banner-heading h2 {
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  font-size: 45px;
+  top: -12px;
+}
+
+/*======================= review section ========================*/
+.review {
+  color: #454545;
+}
+.review .wraper {
+  max-width: 746px;
+  margin: 0 auto;
+}
+.review ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.review ul li {
+  padding: 15px 0;
+}
+.review ul li:before {
+  content: '“';
+  font-family: "Playfair Display", serif;
+  font-size: 100px;
+  float: left;
+  width: 42px;
+  line-height: 0;
+  position: relative;
+  top: 37px;
+}
+.review ul li p {
+  float: left;
+  width: calc(100% - 42px);
+  padding-left: 54px;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.review-heading {
+  font-size: 23px;
+  line-height: 1.3043478261;
+  border-bottom: 1px solid #454545;
+  padding-bottom: 20px;
+  margin-bottom: 41px;
 }
